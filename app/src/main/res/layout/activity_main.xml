@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/menutop"
+        android:padding="10dp"/>
+    <TextView
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        android:text="PotRiders"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/newfile"
+        android:padding="10dp"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:background="#EDEDED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <EditText
+           android:id="@+id/search_weed"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="18dp"
+           android:layout_marginLeft="20dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="20dp"
+           android:drawableLeft="@drawable/mapicon"
+           android:textColor="@color/colorBlack"
+           android:hint="Enter Zip Code"
+           android:textColorHint="@color/colorBlack"
+           />
+        <Button
+            android:layout_below="@id/search_weed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signup"
+            android:text="find weed"
+            android:textSize="15dp"
+            android:layout_margin="20dp"
+            android:background="@color/colorGreen"
+            android:textColor="@color/colorWhite"
+            />
+    </RelativeLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:id="@+id/restaurent_list_recyclerview"
+    android:layout_height="match_parent">
+</android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

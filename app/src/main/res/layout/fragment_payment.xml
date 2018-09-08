@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.PaymentFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:padding="7dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CheckOut"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:id="@+id/layout_shipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:drawableLeft="@drawable/map_icon_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGreen"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/layout_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:drawableLeft="@drawable/payment_icon_green"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:backgroundTint="@color/colorGreen"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:drawablePadding="7dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGreen"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/layout_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:drawablePadding="7dp"
+                    android:drawableLeft="@drawable/confirm_icon_black"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorView"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+<LinearLayout
+    android:background="@color/colorWhiteBackground"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="15dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PotRiders Money"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorView"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="CAD 15.00"
+            android:textColor="@color/colorGreen"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textAlignment="textEnd"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:text="PotRiders Money"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Wallets"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorView"/>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_weight="1"
+            android:src="@drawable/paytm"
+            android:scaleType="fitXY"
+            android:layout_marginRight="10dp"
+            android:layout_width="70dp"
+             android:layout_height="25dp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paytm"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_weight="8"
+                android:textAlignment="textEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CAD 10.00"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+            />
+        <LinearLayout
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/paypal"
+                android:scaleType="fitXY"
+                android:layout_width="70dp"
+                android:layout_margin="10dp"
+                android:layout_height="25dp" />
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayPal"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:textAlignment="textEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="portliza@gmail.com"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                />
+</LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Saved Cards"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="5dp"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <ImageView
+      android:src="@drawable/visa"
+      android:scaleType="fitXY"
+            android:layout_width="70dp"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RBC"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp"
+                android:layout_margin="10dp"
+
+                />
+</LinearLayout>
+
+            <LinearLayout
+                android:weightSum="10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:backgroundTint="@color/colorView"
+                    android:layout_weight="7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="**** **** **** 1001"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+
+                    android:clickable="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    />
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="textEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edit"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorBlack"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/next_to_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorGreyBlack"
+            android:drawableRight="@drawable/arrow_right_white"
+            android:padding="10dp"
+            android:text="Add New Payment Method"
+            android:textAllCaps="false"
+
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</ScrollView>

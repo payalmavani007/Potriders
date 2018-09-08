@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ShippingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="41dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:padding="7dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="CheckOut"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:id="@+id/layout_shipping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:drawableLeft="@drawable/map_icon_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorGreen"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/layout_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:drawableLeft="@drawable/payment_icon_black"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Payment"
+                    android:textAllCaps="true"
+                    android:drawablePadding="7dp"
+                    />
+                <View
+                    android:background="@color/colorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/layout_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:textAllCaps="true"
+                    android:drawablePadding="7dp"
+                    android:drawableLeft="@drawable/confirm_icon_black"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="18dp"
+                    />
+                <View
+                    android:background="@color/colorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                   />
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorWhiteBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Shipping Address"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+</LinearLayout>
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="Port Liza"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Phone Number"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="+1 416 606 3030"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+         />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Address"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="1500 Commerce Cross West"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+           />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="Toronto"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+          />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Zip Code"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="1B9"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Country"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:text="Canada"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <View
+            android:background="@color/colorView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+         />
+
+        <LinearLayout
+
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Save for Future Purchase"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton1"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@drawable/toggle_selector"
+                android:checked="false"
+                android:gravity="center"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorView" />
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/colorWhiteBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Delivery"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+</LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorView"
+            android:layout_marginBottom="10dp" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/currency_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <Button
+            android:id="@+id/next_to_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@color/colorGreyBlack"
+            android:drawableRight="@drawable/arrow_right_white"
+            android:padding="10dp"
+            android:text="Next - Payment Info"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ThankYouFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:padding="7dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Confirmation"
+            android:textColor="@color/colorBlack"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="textEnd"
+        android:layout_alignParentRight="true"
+        android:text="Help"
+        android:textStyle="bold"
+        android:textColor="@color/colorGreen"
+        android:layout_margin="10dp"
+        android:textSize="15dp"
+        />
+        </RelativeLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack"
+        android:layout_margin="5dp"/>
+
+        <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:clickable="false"
+            android:layout_weight="1"
+            android:id="@+id/layout_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:drawableLeft="@drawable/map_icon_blurgreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shipping"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlurGreen"
+                android:textSize="18dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="false"
+            android:layout_weight="1"
+            android:id="@+id/layout_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:drawableLeft="@drawable/payment_icon_blurgreen"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/colorBlurGreen"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:drawablePadding="7dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:id="@+id/layout_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textAllCaps="true"
+                android:drawablePadding="7dp"
+                android:drawableLeft="@drawable/confirm_icon_green"
+                android:textStyle="bold"
+                android:textColor="@color/colorGreen"
+                android:textSize="18dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorGreen"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/loginbg"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:src="@drawable/confirm_thumb"
+        android:layout_height="150dp" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank You, Port Liza!"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your order has been Placed."
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Details"
+        android:layout_margin="5dp"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="Track Order"
+        android:textSize="17dp"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="20dp"
+        />
+    </LinearLayout>
+</LinearLayout>

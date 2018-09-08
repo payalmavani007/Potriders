@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Weed">
+    <item name="weeditem">1/4 (7 gram) </item>
+    <item name="weed">1/2 (14 gram) </item>
+    </string-array>
+</resources>

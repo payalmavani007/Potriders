@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_margin="7dp"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="120dp"
+            android:src="@drawable/bluedrumweed"
+            android:layout_height="120dp" />
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LEMON LIME OG"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_weight="4"
+                    />
+                <ImageView
+                    android:layout_weight="1"
+                    android:src="@drawable/menu"
+                    android:padding="5dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/diamond" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AA"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    />
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="0.1"
+                    android:layout_margin="5dp"
+                    android:id="@+id/ratingBar"
+                    style="@style/customRatingBar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(30)"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15dp"
+                    />
+            </LinearLayout>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:textColor="@color/colorBlack"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="Lemon Lime OG is a great sativa dominant strain that include uplifting.."
+                />
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text="CAD "
+                        android:textColor="@color/colorBlack"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:text=" 10.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlack"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_weight="2"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_weight="3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/minus"
+                    android:padding="5dp"/>
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+                <ImageView
+
+                    android:layout_weight="3"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/plus"
+                    android:padding="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+<View
+    android:layout_below="@id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/colorBlack"/>
+</RelativeLayout>

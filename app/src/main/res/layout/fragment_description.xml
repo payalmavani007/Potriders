@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/layout"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DescriptionFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LEMON LIME OG"
+        android:textColor="@color/colorGreen"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+
+        />
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/diamond" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AA"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.1"
+            android:layout_margin="5dp"
+            android:id="@+id/ratingBar"
+            style="@style/customRatingBar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(30)"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/weed_weight"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></Spinner>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="CAD "
+                    android:textColor="@color/colorBlack"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text=" 10.00"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp"
+            android:layout_margin="10dp"
+            android:text="Lemon Lime OG is a great sativa dominant strain that induces uplifting cerebral euphoria followed by relaxation.,Lemon Lime OG is a great sativa dominant strain that induces uplifting cerebral euphoria followed by relaxation. Energizes the mind, improves focus, prompts giggles and social behavior. Relieves stress, has good analgesic properties. Promotes laziness and couch lock. "
+            />
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add to cart"
+            android:textSize="15dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/addtocart"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorGreen"
+            />
+</RelativeLayout>

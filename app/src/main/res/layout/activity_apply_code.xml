@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/blackbox"
+    android:orientation="horizontal"
+
+    android:weightSum="10"
+    tools:context=".Activity.ApplyCode">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="7"
+        android:hint="Enter Promo Code"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorBlack"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <Button
+
+        android:id="@+id/apply"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="3"
+        android:background="@color/colorGreen"
+        android:text="Apply"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>
